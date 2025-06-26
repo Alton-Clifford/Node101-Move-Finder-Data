@@ -1,13 +1,10 @@
-const express = require('express');
-
+const express = require("express");
 
 const app = express();
 
-// When making calls to the OMDB API make sure to append the '&apikey=8730e0e' parameter
+const axios = require("axios").default;
+const morgan = require("morgan");
 
-<<<<<<< HEAD
-module.exports = app;
-=======
 //apply middleware
 app.use(morgan("dev"));
 
@@ -62,4 +59,3 @@ app.get("/", async (req, res) => {
 });
 
 module.exports = app;
->>>>>>> 5ca96d5 (No API Key)
